@@ -1,3 +1,12 @@
 __pycache__/
 *.pt
 .venv/
+venv/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+*.so
+*.dll
