@@ -1,0 +1,44 @@
+{
+  "gridworld": {
+    "vanilla": {
+      "n_runs": 0,
+      "summary": null,
+      "per_seed_metrics": []
+    },
+    "per": {
+      "n_runs": 0,
+      "summary": null,
+      "per_seed_metrics": []
+    },
+    "memory": {
+      "n_runs": 0,
+      "summary": null,
+      "per_seed_metrics": []
+    },
+    "hier": {
+      "n_runs": 0,
+      "summary": null,
+      "per_seed_metrics": []
+    },
+    "full": {
+      "n_runs": 0,
+      "summary": null,
+      "per_seed_metrics": []
+    },
+    "a2c": {
+      "n_runs": 0,
+      "summary": null,
+      "per_seed_metrics": []
+    },
+    "ppo": {
+      "n_runs": 0,
+      "summary": null,
+      "per_seed_metrics": []
+    },
+    "sac": {
+      "n_runs": 0,
+      "summary": null,
+      "per_seed_metrics": []
+    }
+  }
+}

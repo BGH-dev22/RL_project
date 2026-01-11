@@ -1,0 +1,62 @@
+[
+  {
+    "Variante": "vanilla",
+    "Episodes": 3000,
+    "Cl\u00e9s (%)": "96.5",
+    "Portes (%)": "75.8",
+    "Goals (%)": "66.6",
+    "Retour Moyen": "-102.1",
+    "Retour Std": "354.5",
+    "Retour Max": "170.5"
+  },
+  {
+    "Variante": "per",
+    "Episodes": 3000,
+    "Cl\u00e9s (%)": "97.5",
+    "Portes (%)": "73.1",
+    "Goals (%)": "58.4",
+    "Retour Moyen": "-128.0",
+    "Retour Std": "327.5",
+    "Retour Max": "173.5"
+  },
+  {
+    "Variante": "memory",
+    "Episodes": 3000,
+    "Cl\u00e9s (%)": "96.6",
+    "Portes (%)": "75.5",
+    "Goals (%)": "67.9",
+    "Retour Moyen": "-86.9",
+    "Retour Std": "310.6",
+    "Retour Max": "170.6"
+  },
+  {
+    "Variante": "hier",
+    "Episodes": 3000,
+    "Cl\u00e9s (%)": "98.0",
+    "Portes (%)": "89.6",
+    "Goals (%)": "71.3",
+    "Retour Moyen": "-34.3",
+    "Retour Std": "337.9",
+    "Retour Max": "206.4"
+  },
+  {
+    "Variante": "full",
+    "Episodes": 3000,
+    "Cl\u00e9s (%)": "97.3",
+    "Portes (%)": "89.1",
+    "Goals (%)": "72.8",
+    "Retour Moyen": "-42.5",
+    "Retour Std": "287.0",
+    "Retour Max": "209.9"
+  },
+  {
+    "Variante": "full_explain",
+    "Episodes": 3000,
+    "Cl\u00e9s (%)": "98.0",
+    "Portes (%)": "90.6",
+    "Goals (%)": "68.2",
+    "Retour Moyen": "-43.2",
+    "Retour Std": "307.9",
+    "Retour Max": "209.9"
+  }
+]

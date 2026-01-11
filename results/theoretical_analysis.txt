@@ -1,0 +1,140 @@
+======================================================================
+ANALYSE THÉORIQUE DES VARIANTES DQN
+======================================================================
+
+1. MÉTRIQUES THÉORIQUES PAR VARIANTE
+--------------------------------------------------
+
+VANILLA:
+  Complexité d'échantillonnage: 1.000
+  Taux de convergence relatif: 1.000
+  Réduction de variance: 0.0%
+  Efficacité d'exploration: 50.0%
+  Overhead temps: 1.00x
+  Overhead mémoire: 1.00x
+
+PER:
+  Complexité d'échantillonnage: 0.800
+  Taux de convergence relatif: 1.250
+  Réduction de variance: 15.0%
+  Efficacité d'exploration: 50.0%
+  Overhead temps: 1.10x
+  Overhead mémoire: 1.05x
+
+MEMORY:
+  Complexité d'échantillonnage: 0.750
+  Taux de convergence relatif: 1.333
+  Réduction de variance: 20.0%
+  Efficacité d'exploration: 50.0%
+  Overhead temps: 1.15x
+  Overhead mémoire: 1.30x
+
+HIER:
+  Complexité d'échantillonnage: 0.700
+  Taux de convergence relatif: 1.429
+  Réduction de variance: 25.0%
+  Efficacité d'exploration: 50.0%
+  Overhead temps: 1.40x
+  Overhead mémoire: 1.20x
+
+FULL:
+  Complexité d'échantillonnage: 0.220
+  Taux de convergence relatif: 4.550
+  Réduction de variance: 60.0%
+  Efficacité d'exploration: 80.0%
+  Overhead temps: 1.65x
+  Overhead mémoire: 1.55x
+
+FULL_EXPLAIN:
+  Complexité d'échantillonnage: 0.220
+  Taux de convergence relatif: 4.550
+  Réduction de variance: 60.0%
+  Efficacité d'exploration: 80.0%
+  Overhead temps: 1.90x
+  Overhead mémoire: 1.65x
+
+
+2. ANALYSE DES SYNERGIES
+--------------------------------------------------
+
+prioritized_replay+episodic_memory:
+  Synergie théorique: 0.215
+  Synergie empirique: 1310.0%
+  Recommandation: COMBINE
+  Synergie non documentée
+
+prioritized_replay+hierarchical:
+  Synergie théorique: 0.069
+  Synergie empirique: 970.0%
+  Recommandation: OPTIONAL
+  Synergie non documentée
+
+episodic_memory+hierarchical:
+  Synergie théorique: 0.375
+  Synergie empirique: 20.0%
+  Recommandation: COMBINE
+  SYNERGIE Mémoire Épisodique + Hiérarchique:
+            - La mémoire stocke des patterns de sous-objectifs réussis
+            - L'architecture hiérarchique sélectionne les sous-objectifs
+            - Ensemble: Les sous-objectifs sont guidés par l'expérience passée
+            - Résultat: Exploration structurée et efficace
+
+
+3. BORNES DE CONVERGENCE
+--------------------------------------------------
+
+VANILLA:
+  Erreur totale bornée: 0.3742
+  Episodes estimés pour convergence: 1000
+  Efficacité relative: 1.00x
+
+PER:
+  Erreur totale bornée: 0.3115
+  Episodes estimés pour convergence: 640
+  Efficacité relative: 1.25x
+
+MEMORY:
+  Erreur totale bornée: 0.2928
+  Episodes estimés pour convergence: 562
+  Efficacité relative: 1.33x
+
+HIER:
+  Erreur totale bornée: 0.2741
+  Episodes estimés pour convergence: 490
+  Efficacité relative: 1.43x
+
+FULL:
+  Erreur totale bornée: 0.1297
+  Episodes estimés pour convergence: 48
+  Efficacité relative: 4.55x
+
+FULL_EXPLAIN:
+  Erreur totale bornée: 0.1297
+  Episodes estimés pour convergence: 48
+  Efficacité relative: 4.55x
+
+
+4. INSIGHTS THÉORIQUES CLÉS
+--------------------------------------------------
+
+INSIGHT 1: La combinaison Hiérarchique + Mémoire Épisodique est optimale
+- La décomposition hiérarchique réduit la complexité du problème
+- La mémoire épisodique capture les patterns de succès
+- Synergie: Les sous-objectifs sont appris plus rapidement
+
+INSIGHT 2: PER améliore toutes les autres techniques
+- Focalise l'apprentissage sur les transitions critiques
+- Réduit le biais d'échantillonnage
+- Bénéfice multiplicatif avec d'autres techniques
+
+INSIGHT 3: L'explainability n'affecte pas la convergence
+- Overhead computationnel sans impact sur l'apprentissage
+- Utile pour le debugging mais pas pour la performance
+- Peut être activé sans coût en performance
+
+INSIGHT 4: Le full combine les avantages avec overhead acceptable
+- Meilleure performance globale (théorique et empirique)
+- Overhead temps: ~2x
+- Overhead mémoire: ~1.5x
+- Trade-off favorable pour problèmes complexes
+        

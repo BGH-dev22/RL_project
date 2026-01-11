@@ -1,0 +1,321 @@
+{
+  "gridworld": {
+    "vanilla": {
+      "n_runs": 3,
+      "summary": {
+        "final_return": {
+          "n": 3,
+          "mean": -36.498333333333335,
+          "std": 19.630853479493275,
+          "sem": 11.333878540807545,
+          "ci_95_lower": -59.16609041494843,
+          "ci_95_upper": -13.830576251718245,
+          "ci_99_lower": -67.0998053935137,
+          "ci_99_upper": -5.896861273152961,
+          "median": -47.01,
+          "q25": -47.8225,
+          "q75": -30.43,
+          "min": -48.635,
+          "max": -13.85,
+          "iqr": 17.3925
+        },
+        "goal_rate": {
+          "n": 3,
+          "mean": 0.3466666666666667,
+          "std": 0.16772994167212169,
+          "sem": 0.0968389269755597,
+          "ci_95_lower": 0.1529888127155473,
+          "ci_95_upper": 0.540344520617786,
+          "ci_99_lower": 0.08520156383265548,
+          "ci_99_upper": 0.6081317695006778,
+          "median": 0.26,
+          "q25": 0.25,
+          "q75": 0.4,
+          "min": 0.24,
+          "max": 0.54,
+          "iqr": 0.15000000000000002
+        }
+      },
+      "per_seed_metrics": [
+        {
+          "seed": 42,
+          "metrics": {
+            "mean_return": -91.7025,
+            "std_return": 154.80967425761867,
+            "final_mean_return": -13.85,
+            "final_std_return": 77.1941221855654,
+            "max_return": 144.5,
+            "goal_rate": 0.54,
+            "training_time": 21.592278242111206,
+            "sample_efficiency": 0.235
+          }
+        },
+        {
+          "seed": 123,
+          "metrics": {
+            "mean_return": -133.005,
+            "std_return": 169.67591159324886,
+            "final_mean_return": -48.635,
+            "final_std_return": 73.85390494076803,
+            "max_return": 176.0,
+            "goal_rate": 0.24,
+            "training_time": 18.437483549118042,
+            "sample_efficiency": 0.12
+          }
+        },
+        {
+          "seed": 456,
+          "metrics": {
+            "mean_return": -128.3325,
+            "std_return": 156.9371472716068,
+            "final_mean_return": -47.01,
+            "final_std_return": 62.60359334734708,
+            "max_return": 123.5,
+            "goal_rate": 0.26,
+            "training_time": 18.678086519241333,
+            "sample_efficiency": 0.115
+          }
+        }
+      ]
+    },
+    "per": {
+      "n_runs": 3,
+      "summary": {
+        "final_return": {
+          "n": 3,
+          "mean": -58.57833333333334,
+          "std": 11.083269298060625,
+          "sem": 6.398928512736417,
+          "ci_95_lower": -71.37619035880617,
+          "ci_95_upper": -45.78047630786051,
+          "ci_99_lower": -75.85544031772167,
+          "ci_99_upper": -41.301226348945015,
+          "median": -57.24,
+          "q25": -63.754999999999995,
+          "q75": -52.7325,
+          "min": -70.27,
+          "max": -48.225,
+          "iqr": 11.022499999999994
+        },
+        "goal_rate": {
+          "n": 3,
+          "mean": 0.14666666666666664,
+          "std": 0.09504384952922168,
+          "sem": 0.05487359211051442,
+          "ci_95_lower": 0.036919482445637794,
+          "ci_95_upper": 0.25641385088769547,
+          "ci_99_lower": -0.0014920320317223235,
+          "ci_99_upper": 0.2948253653650556,
+          "median": 0.15,
+          "q25": 0.1,
+          "q75": 0.195,
+          "min": 0.05,
+          "max": 0.24,
+          "iqr": 0.095
+        }
+      },
+      "per_seed_metrics": [
+        {
+          "seed": 42,
+          "metrics": {
+            "mean_return": -106.705,
+            "std_return": 143.55002777777509,
+            "final_mean_return": -48.225,
+            "final_std_return": 67.15777598312796,
+            "max_return": 148.0,
+            "goal_rate": 0.24,
+            "training_time": 22.350152730941772,
+            "sample_efficiency": 0.135
+          }
+        },
+        {
+          "seed": 123,
+          "metrics": {
+            "mean_return": -142.795,
+            "std_return": 161.42359020601668,
+            "final_mean_return": -70.27,
+            "final_std_return": 47.968657475480796,
+            "max_return": 100.5,
+            "goal_rate": 0.05,
+            "training_time": 21.69699501991272,
+            "sample_efficiency": 0.055
+          }
+        },
+        {
+          "seed": 456,
+          "metrics": {
+            "mean_return": -129.51,
+            "std_return": 151.5917870466603,
+            "final_mean_return": -57.24,
+            "final_std_return": 50.388713021866316,
+            "max_return": 137.5,
+            "goal_rate": 0.15,
+            "training_time": 24.19492745399475,
+            "sample_efficiency": 0.09
+          }
+        }
+      ]
+    },
+    "a2c": {
+      "n_runs": 0,
+      "summary": null,
+      "per_seed_metrics": []
+    },
+    "ppo": {
+      "n_runs": 3,
+      "summary": {
+        "final_return": {
+          "n": 3,
+          "mean": -73.60000000000001,
+          "std": 3.602790585088181,
+          "sem": 2.0800721141345107,
+          "ci_95_lower": -77.76014422826903,
+          "ci_95_upper": -69.43985577173099,
+          "ci_99_lower": -79.21619470816319,
+          "ci_99_upper": -67.98380529183683,
+          "median": -71.55,
+          "q25": -74.655,
+          "q75": -71.52,
+          "min": -77.76,
+          "max": -71.49,
+          "iqr": 3.135000000000005
+        },
+        "goal_rate": {
+          "n": 3,
+          "mean": 0.05333333333333334,
+          "std": 0.09237604307034013,
+          "sem": 0.05333333333333334,
+          "ci_95_lower": -0.05333333333333334,
+          "ci_95_upper": 0.16,
+          "ci_99_lower": -0.09066666666666667,
+          "ci_99_upper": 0.19733333333333336,
+          "median": 0.0,
+          "q25": 0.0,
+          "q75": 0.08,
+          "min": 0.0,
+          "max": 0.16,
+          "iqr": 0.08
+        }
+      },
+      "per_seed_metrics": [
+        {
+          "seed": 42,
+          "metrics": {
+            "mean_return": -106.0475,
+            "std_return": 116.76594749219483,
+            "final_mean_return": -77.76,
+            "final_std_return": 10.966421476489035,
+            "max_return": 54.5,
+            "goal_rate": 0.0,
+            "training_time": 154.6259458065033,
+            "sample_efficiency": 0.02
+          }
+        },
+        {
+          "seed": 123,
+          "metrics": {
+            "mean_return": -79.9425,
+            "std_return": 50.36122460534494,
+            "final_mean_return": -71.55,
+            "final_std_return": 51.51657500261445,
+            "max_return": 92.0,
+            "goal_rate": 0.16,
+            "training_time": 114.00098371505737,
+            "sample_efficiency": 0.055
+          }
+        },
+        {
+          "seed": 456,
+          "metrics": {
+            "mean_return": -79.095,
+            "std_return": 50.768060579462755,
+            "final_mean_return": -71.49,
+            "final_std_return": 3.179606893941451,
+            "max_return": -63.0,
+            "goal_rate": 0.0,
+            "training_time": 138.7846028804779,
+            "sample_efficiency": 0.0
+          }
+        }
+      ]
+    },
+    "sac": {
+      "n_runs": 3,
+      "summary": {
+        "final_return": {
+          "n": 3,
+          "mean": 286.51,
+          "std": 502.8476816094512,
+          "sem": 290.31924433859587,
+          "ci_95_lower": -294.12848867719174,
+          "ci_95_upper": 867.1484886771917,
+          "ci_99_lower": -497.3519597142089,
+          "ci_99_upper": 1070.371959714209,
+          "median": 87.58,
+          "q25": 0.5700000000000074,
+          "q75": 472.985,
+          "min": -86.44,
+          "max": 858.39,
+          "iqr": 472.415
+        },
+        "goal_rate": {
+          "n": 3,
+          "mean": 0.44,
+          "std": 0.5040833264451424,
+          "sem": 0.291032644217105,
+          "ci_95_lower": -0.14206528843421,
+          "ci_95_upper": 1.02206528843421,
+          "ci_99_lower": -0.3457881393861835,
+          "ci_99_upper": 1.2257881393861836,
+          "median": 0.33,
+          "q25": 0.165,
+          "q75": 0.66,
+          "min": 0.0,
+          "max": 0.99,
+          "iqr": 0.495
+        }
+      },
+      "per_seed_metrics": [
+        {
+          "seed": 42,
+          "metrics": {
+            "mean_return": 289.9425,
+            "std_return": 478.20340645351956,
+            "final_mean_return": 87.58,
+            "final_std_return": 241.36910241370998,
+            "max_return": 873.5,
+            "goal_rate": 0.33,
+            "training_time": 1855.6153390407562,
+            "sample_efficiency": 0.515
+          }
+        },
+        {
+          "seed": 123,
+          "metrics": {
+            "mean_return": -81.82,
+            "std_return": 33.65631590058544,
+            "final_mean_return": -86.44,
+            "final_std_return": 1.9303885619221846,
+            "max_return": -59.0,
+            "goal_rate": 0.0,
+            "training_time": 1229.8227398395538,
+            "sample_efficiency": 0.0
+          }
+        },
+        {
+          "seed": 456,
+          "metrics": {
+            "mean_return": 567.815,
+            "std_return": 428.22879197340296,
+            "final_mean_return": 858.39,
+            "final_std_return": 99.77202964759212,
+            "max_return": 872.0,
+            "goal_rate": 0.99,
+            "training_time": 1129.8276386260986,
+            "sample_efficiency": 0.76
+          }
+        }
+      ]
+    }
+  }
+}

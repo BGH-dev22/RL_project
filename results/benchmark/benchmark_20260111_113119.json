@@ -1,0 +1,134 @@
+{
+  "gridworld": {
+    "vanilla": {
+      "n_runs": 2,
+      "summary": {
+        "final_return": {
+          "n": 2,
+          "mean": -193.465,
+          "std": 33.8138462763407,
+          "sem": 23.909999999999997,
+          "ci_95_lower": -241.285,
+          "ci_95_upper": -145.645,
+          "ci_99_lower": -258.022,
+          "ci_99_upper": -128.90800000000002,
+          "median": -193.465,
+          "q25": -205.42000000000002,
+          "q75": -181.51,
+          "min": -217.375,
+          "max": -169.555,
+          "iqr": 23.910000000000025
+        },
+        "goal_rate": {
+          "n": 2,
+          "mean": 0.15,
+          "std": 0.042426406871192854,
+          "sem": 0.03,
+          "ci_95_lower": 0.09,
+          "ci_95_upper": 0.21,
+          "ci_99_lower": 0.06899999999999999,
+          "ci_99_upper": 0.23099999999999998,
+          "median": 0.15,
+          "q25": 0.135,
+          "q75": 0.16499999999999998,
+          "min": 0.12,
+          "max": 0.18,
+          "iqr": 0.02999999999999997
+        }
+      },
+      "per_seed_metrics": [
+        {
+          "seed": 42,
+          "metrics": {
+            "mean_return": -169.555,
+            "std_return": 172.7747506871302,
+            "final_mean_return": -169.555,
+            "final_std_return": 172.7747506871302,
+            "max_return": 124.0,
+            "goal_rate": 0.18,
+            "training_time": 9.235624313354492,
+            "sample_efficiency": 0.09
+          }
+        },
+        {
+          "seed": 123,
+          "metrics": {
+            "mean_return": -217.375,
+            "std_return": 194.6505506670865,
+            "final_mean_return": -217.375,
+            "final_std_return": 194.6505506670865,
+            "max_return": 89.5,
+            "goal_rate": 0.12,
+            "training_time": 9.826980352401733,
+            "sample_efficiency": 0.04
+          }
+        }
+      ]
+    },
+    "per": {
+      "n_runs": 2,
+      "summary": {
+        "final_return": {
+          "n": 2,
+          "mean": -190.2525,
+          "std": 35.450798474787554,
+          "sem": 25.067499999999995,
+          "ci_95_lower": -240.3875,
+          "ci_95_upper": -140.1175,
+          "ci_99_lower": -257.93475,
+          "ci_99_upper": -122.57025,
+          "median": -190.2525,
+          "q25": -202.78625,
+          "q75": -177.71875,
+          "min": -215.32,
+          "max": -165.185,
+          "iqr": 25.067499999999995
+        },
+        "goal_rate": {
+          "n": 2,
+          "mean": 0.12000000000000001,
+          "std": 0.02828427124746191,
+          "sem": 0.020000000000000004,
+          "ci_95_lower": 0.08,
+          "ci_95_upper": 0.16000000000000003,
+          "ci_99_lower": 0.066,
+          "ci_99_upper": 0.17400000000000002,
+          "median": 0.12000000000000001,
+          "q25": 0.11000000000000001,
+          "q75": 0.13,
+          "min": 0.1,
+          "max": 0.14,
+          "iqr": 0.01999999999999999
+        }
+      },
+      "per_seed_metrics": [
+        {
+          "seed": 42,
+          "metrics": {
+            "mean_return": -165.185,
+            "std_return": 172.80981822512285,
+            "final_mean_return": -165.185,
+            "final_std_return": 172.80981822512285,
+            "max_return": 148.0,
+            "goal_rate": 0.14,
+            "training_time": 9.967856168746948,
+            "sample_efficiency": 0.07
+          }
+        },
+        {
+          "seed": 123,
+          "metrics": {
+            "mean_return": -215.32,
+            "std_return": 198.22817055100924,
+            "final_mean_return": -215.32,
+            "final_std_return": 198.22817055100924,
+            "max_return": 92.0,
+            "goal_rate": 0.1,
+            "training_time": 8.41684627532959,
+            "sample_efficiency": 0.06
+          }
+        }
+      ]
+    }
+  }
+}

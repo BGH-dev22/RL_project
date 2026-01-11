@@ -1,0 +1,27 @@
+# Core Deep Learning
+torch>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+
+# Reinforcement Learning Environments
+gymnasium>=0.29.0
+gymnasium[atari]>=0.29.0      # Pour Atari (optionnel)
+gymnasium[mujoco]>=0.29.0     # Pour MuJoCo (optionnel)
+
+# Baselines Comparison
+stable-baselines3>=2.0.0      # A2C, PPO, SAC de référence
+
+# Statistical Analysis
+scipy>=1.11.0                 # Tests statistiques
+pandas>=2.0.0                 # Analyse de données
+
+# Visualization
+seaborn>=0.12.0               # Visualisations avancées
+plotly>=5.15.0                # Graphiques interactifs (optionnel)
+
+# Reproducibility
+tqdm>=4.65.0                  # Barres de progression
+
+# Development (optionnel)
+# jupyter>=1.0.0
+# tensorboard>=2.13.0
